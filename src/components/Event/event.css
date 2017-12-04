@@ -1,0 +1,34 @@
+.root{
+  margin-bottom: 20px;
+}
+.date{
+  background-color: white;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+}
+.month{
+  background-color: #9D0000;
+  color: #e8e8e8;
+  font-size: 12px;
+  display: block;
+}
+.day{
+  color: #8A96A8;
+  font-size: 12px;
+  display: block;
+  font-size: 23px;
+  padding-top: 5px;
+}
+.details{
+  color: #333333;
+  position: relative;
+  padding-left: 60px;
+}
+.time{
+  margin-top: -4px;
+  margin-bottom: 3px;
+  font-size: 12px;
+}

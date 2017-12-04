@@ -1,0 +1,24 @@
+.root{
+  height:140px;
+  width: 120px;
+  position: absolute;
+  object-fit: cover;
+  margin-top: 5px;
+}
+.description{
+  padding-left: 130px;
+  position: relative;
+}
+.paragraph{
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.title{
+  font-size: 18px;
+  font-weight: 300;
+}
+.fa{
+  padding-left: 10px;
+  position: relative;
+  top: 2px;
+}

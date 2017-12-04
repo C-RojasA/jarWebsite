@@ -1,0 +1,48 @@
+.background {
+  margin-top: 100px;
+  margin-bottom: 80px;  
+  width: 100%;
+  display: flex;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  opacity: 0.7;
+}
+.description{
+  width: 350px;
+  margin:-32% 20px 0 60px;
+  position: absolute;
+  z-index:99;
+}
+
+.title{
+  margin:-35% 20px 0 60px;
+  position: absolute;
+  z-index:99;
+}
+
+.imgProfile{
+  width: 550px;
+  margin-top: -530px;
+  right:7%;
+  position: absolute;
+  z-index:99;
+  transform: rotate(-3deg);
+  border:10px solid white;
+}
+
+@media (max-width: 750px) {
+  .root{
+    min-height: 550px;
+  }
+
+  .description{
+    margin-top: -350px;
+  }
+
+  .title{
+    margin-top: -390px;
+  }
+}
+
+
+

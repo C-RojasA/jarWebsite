@@ -1,0 +1,17 @@
+.sectionContent{
+  background-color: #F5F5F5;
+  margin-top: 25px;
+  padding: 15px 15px 15px 15px;
+}
+.sectionHeading{
+  padding-left: 15px;
+  padding-bottom: 10px;
+  color: #00577C;
+}
+.admision{
+  margin-top: 25px;
+  margin-bottom: -15px;
+  width: 100%;
+  object-fit: cover;
+
+}
