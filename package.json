@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server -w",
-    "build": "NODE_ENV=production webpack --config webpack.config.prod.js -p",
-    "serve": "NODE_ENV=production webpack-dev-server --config webpack.config.prod.js"
+    "dev": "webpack --mode development --colors",
+    "build": "webpack --mode production --colors"
   },
   "author": "",
   "license": "MIT",
