@@ -1,40 +1,69 @@
-//Dependencies
-import React from 'react'
+import React from "react";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
+import PhoneIcon from "@material-ui/icons/Phone";
+import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 
-//Components
-import BottomBar from '../BottomBar'
+import {
+  Grid,
+  Container,
+  Box,
+  Typography,
+  makeStyles
+} from "@material-ui/core";
 
-import styles from './footer.css'
+import BottomBar from "../BottomBar";
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    marginTop: "35px",
+    backgroundColor: "#444",
+    padding: "25px",
+    color: "white"
+  }
+}));
 
 const Footer = () => {
-  return(
-  <footer className={styles.root}>
-    <div className="container">
-      <div className="row">
-      <div className={`${styles.contact} ${"col-lg-4"}`}>
-				<h5>CONTACTO</h5>
-				<p className="time"><i className="fa fa-map-marker"/> Calle la Cruz #1722 - Villa el Parque,<br /> Las Compañias - La Serena </p>
-				<p className="time"><i className="fa fa-phone"/> 51 2253807 </p>
-				<p className="time"><i className="fa fa-envelope-o"/> liceojorgealessandri@corporacionggv.cl </p>
-			</div>
-      <div className={`${styles.contact} ${"col-lg-4"}`}>
-				<h5>SUSCRIBETE</h5>
-				<p>Suscribete para recibir nuestros boletines en tu email</p>
-				<div className="input-group">
-					<input className="form-control" type="text" name="mail" placeholder="Ingrese su correo electronico" />
-					<span className="input-group-btn">
-			        <button className="btn btn-primary" type="button">Suscribete!</button></span>
-			</div>
-			</div>
-      <div className={`${styles.contact} ${"col-lg-4"}`}>
-        <h5>SÍGUENOS EN</h5>
-          
-      </div>
-      </div>
-    </div>
-    <BottomBar />
-  </footer>
-  )
-}
+  const classes = useStyles();
+  return (
+    <>
+      <Box className={classes.root}>
+        <Container maxWidth="lg">
+          <Grid container spacing={3}>
+            <Grid item lg={4}>
+              <Typography variant="h5" gutterBottom>
+                CONTACTO
+              </Typography>
+              <Typography gutterBottom>
+                <LocationOnIcon fontSize="small" />
+                Calle la Cruz #1722 - Villa el Parque Las Compañias - La Serena
+              </Typography>
+              <Typography gutterBottom>
+                <PhoneIcon fontSize="small" />
+                51 2253807
+              </Typography>
+              <Typography gutterBottom>
+                <AlternateEmailIcon fontSize="small" />
+                liceojorgealessandri@corporacionggv.cl
+              </Typography>
+            </Grid>
+            <Grid item lg={4}>
+              <Typography variant="h5" gutterBottom>
+                SUSCRIBETE
+              </Typography>
+              <Typography>aaaa</Typography>
+            </Grid>
+            <Grid item lg={4}>
+              <Typography variant="h5" gutterBottom>
+                SÍGUENOS EN
+              </Typography>
+              <Typography>aaaa</Typography>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+      <BottomBar />
+    </>
+  );
+};
 
-export default Footer
+export default Footer;

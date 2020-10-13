@@ -1,17 +1,36 @@
-// Dependencies
-import React from 'react'
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { Typography, Link, Box } from "@material-ui/core";
 
-// Assets
-import styles from './bottom-bar.css'
-
-const BottomBar = () => {
-  return(
-    <div className={styles.root}>
-      <div className="text-center">
-          Copyright @ 2017 Liceo Jorge Alessandri Rodriguez - La Serena | Departamento de informática
-      </div>
-    </div>
-  )
+function Copyright() {
+  return (
+    <Typography variant="body2" align="center">
+      {"Copyright © "}
+      <Link color="inherit" href="https://www.liceojorgealessandri.cl/">
+        Liceo Jorge Alessandri Rodriguez - La Serena.
+      </Link>{" "}
+      {new Date().getFullYear()}
+    </Typography>
+  );
 }
 
-export default BottomBar
+const useStyles = makeStyles(theme => ({
+  root: {
+    backgroundColor: "#2b2b2b",
+    color: "#dcdcdc",
+    padding: 5
+  }
+}));
+
+const BottomBar = () => {
+  const classes = useStyles();
+  return (
+    <>
+      <Box className={classes.root}>
+        <Copyright />
+      </Box>
+    </>
+  );
+};
+
+export default BottomBar;
